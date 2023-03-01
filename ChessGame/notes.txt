@@ -1,1 +1,0 @@
-- An error is raised if you click on the leftmost black pawn (in checkers)
