@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="667.0" prefWidth="661.0" style="-fx-background-image: url(/static/61564.jpg);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="667.0" fitWidth="724.0" layoutX="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@static/langingpage.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="start" alignment="CENTER" layoutX="166.0" layoutY="533.0" mnemonicParsing="false" prefHeight="69.0" prefWidth="322.0" style="-fx-background-color: #ffcd82; -fx-font-weight: Bolder;" text="Start Game" textFill="#964e00">
+         <font>
+            <Font name="Bell MT Bold" size="32.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="116.0" layoutY="216.0" prefHeight="41.0" prefWidth="174.0" style="-fx-font-weight: 800; -fx-text-alignment: center;" stylesheets="@static/styles/menu.css" text="Player 1" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Bell MT" size="32.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <Label alignment="CENTER" layoutX="14.0" prefHeight="69.0" prefWidth="205.0" style="-fx-text-alignment: center;" text="CS BOARD" textAlignment="CENTER" textFill="#ffcd82" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font name="Colonna MT" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="mode1" alignment="CENTER" layoutX="166.0" layoutY="310.0" prefHeight="68.0" prefWidth="330.0" style="-fx-font-weight: 800; -fx-text-alignment: end; -fx-background-color: #9E673E;" text="Select Board colors" textFill="#ffcd82">
+         <font>
+            <Font name="Bell MT Italic" size="37.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <ColorPicker fx:id="color1" editable="true" layoutX="170.0" layoutY="387.0" prefHeight="41.0" prefWidth="150.0" promptText="Color 2" style="-fx-background-color: #ffcd82;">
+         <value>
+            <Color red="0.800000011920929" green="0.43784770369529724" blue="0.07199999690055847" />
+         </value>
+      </ColorPicker>
+      <ColorPicker fx:id="color2" editable="true" layoutX="342.0" layoutY="387.0" prefHeight="41.0" prefWidth="150.0" promptText="Color 1" style="-fx-background-color: #ffcd82;">
+         <value>
+            <Color red="1.0" green="0.8177777528762817" blue="0.39259257912635803" />
+         </value>
+      </ColorPicker>
+      <Label alignment="CENTER" layoutX="378.0" layoutY="216.0" prefHeight="41.0" prefWidth="150.0" style="-fx-font-weight: 800; -fx-text-alignment: center;" stylesheets="@static/styles/menu.css" text="Player 2" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Bell MT" size="32.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <TextField fx:id="player1" layoutX="128.0" layoutY="269.0" prefHeight="31.0" prefWidth="150.0" />
+      <Label fx:id="mode2" alignment="TOP_CENTER" layoutX="182.0" layoutY="64.0" prefHeight="137.0" prefWidth="291.0" style="-fx-font-weight: 800; -fx-text-alignment: end; -fx-background-color: #9E673E; -fx-padding: 15;" text="Select  A Game" textFill="#ffcd82">
+         <font>
+            <Font name="Georgia Bold" size="34.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <TextField fx:id="player2" layoutX="379.0" layoutY="269.0" prefHeight="31.0" prefWidth="149.0" />
+      <Label fx:id="mode11" layoutX="163.0" layoutY="450.0" prefHeight="68.0" prefWidth="322.0" style="-fx-font-weight: 800; -fx-text-alignment: end; -fx-background-color: #9E673E; -fx-label-padding: 0 20;" text="Time Limit" textFill="#ffcd82">
+         <font>
+            <Font name="Bell MT Italic" size="26.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <TextField fx:id="time" layoutX="381.0" layoutY="468.0" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: #ffcd82;" />
+      <ChoiceBox fx:id="gametype" layoutX="195.0" layoutY="132.0" prefHeight="51.0" prefWidth="263.0" style="-fx-background-color: #ffcd82;" />
+   </children>
+</Pane>
